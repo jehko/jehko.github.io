@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
+import projectData from '../ProjectData.json';
 
 function ProjectCard () {
+  console.log(projectData)
   return (
     <Container id="project" className="pt-3">
       <Row className="mb-5">

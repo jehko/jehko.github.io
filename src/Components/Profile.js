@@ -16,6 +16,29 @@ function Profile () {
                 최근에는 React, JPA에 관심이 생겨 공부하고 있습니다.                
               </blockquote>
             </div>
+            <div className="profile-item">
+              <h2>SKILLS</h2>
+              <blockquote>
+                <span className="word-token">JAVA</span>
+                <span className="word-token">SPRING</span>
+                <span className="word-token">Javascript</span>
+                <span className="word-token">React</span>
+                <span className="word-token">Oracle</span>
+                <span className="word-token">Postgresql</span>
+              </blockquote>
+            </div>
+            <div className="profile-item">
+              <h2>TOOLS</h2>
+              <blockquote>
+                <span className="word-token">Eclipse</span>
+                <span className="word-token">VS Code</span>
+                <span className="word-token">Toad</span>
+                <span className="word-token">pgAdmin</span>
+                <span className="word-token">SLACK</span>
+                <span className="word-token">GIT</span>
+                <span className="word-token">SVN</span>
+              </blockquote>
+            </div>
           </Col>
           <Col className="profile-center">
             <div className="profile-item">
