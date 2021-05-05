@@ -21,7 +21,7 @@
     "start_time": "2013",
     "end_time": "2013",
     "summary": "이 프로젝트는.....",
-    "thumbnail" : "./assets/thumbnail/thumb.jpg"
+    "thumbnail" : "./assets/thumbnail/hipass.png"
   },
   {
     "id": 3,
@@ -37,7 +37,7 @@
     "start_time": "2013",
     "end_time": "2013",
     "summary": "이 프로젝트는.....",
-    "thumbnail" : "./assets/thumbnail/thumb.jpg"
+    "thumbnail" : "./assets/thumbnail/trendup.jfif"
   },
   {
     "id": 5,
@@ -45,7 +45,7 @@
     "start_time": "2013",
     "end_time": "2013",
     "summary": "이 프로젝트는.....",
-    "thumbnail" : "./assets/thumbnail/thumb.jpg"
+    "thumbnail" : "./assets/thumbnail/twitter.png"
   },
   {
     "id": 6,

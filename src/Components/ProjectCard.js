@@ -18,13 +18,13 @@ function ProjectCard () {
       {
         dataState.map((rData, rIdx) => {
           return (
-          <Row className="mb-5">
+          <Row>
             {
               rData.map((data, i) => {
                 return (
-                  <Col className="d-flex justify-content-center" key={ data.id }>
+                  <Col className="d-flex justify-content-center mb-5" key={ data.id }>
                     <Card style={{ width: '18rem' }}>
-                      <Card.Img variant="top" src={ data.thumbnail } />
+                      <Card.Img style={{ height: '10rem' }} variant="top" src={ data.thumbnail } />
                       <Card.Body>
                         <Card.Title>{ data.title }</Card.Title>
                         <Card.Text>
