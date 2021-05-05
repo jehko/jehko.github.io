@@ -4,48 +4,55 @@
     "title": "한국도로공사1",
     "start_time": "2013",
     "end_time": "2013",
-    "summary": "이 프로젝트는....."
+    "summary": "이 프로젝트는.....",
+    "thumbnail" : "./assets/thumbnail/thumb.jpg"
   },
   {
     "id": 1,
     "title": "한국도로공사2",
     "start_time": "2013",
     "end_time": "2013",
-    "summary": "이 프로젝트는....."
+    "summary": "이 프로젝트는.....",
+    "thumbnail" : "./assets/thumbnail/thumb.jpg"
   },
   {
     "id": 2,
     "title": "한국도로공사3",
     "start_time": "2013",
     "end_time": "2013",
-    "summary": "이 프로젝트는....."
+    "summary": "이 프로젝트는.....",
+    "thumbnail" : "./assets/thumbnail/thumb.jpg"
   },
   {
     "id": 3,
     "title": "한국도로공사4",
     "start_time": "2013",
     "end_time": "2013",
-    "summary": "이 프로젝트는....."
+    "summary": "이 프로젝트는.....",
+    "thumbnail" : "./assets/thumbnail/thumb.jpg"
   },
   {
     "id": 4,
     "title": "빅데이터 솔루션",
     "start_time": "2013",
     "end_time": "2013",
-    "summary": "이 프로젝트는....."
+    "summary": "이 프로젝트는.....",
+    "thumbnail" : "./assets/thumbnail/thumb.jpg"
   },
   {
     "id": 5,
-    "title": "빅데이터 SNS 데이터 크롤러",
+    "title": "SNS 데이터 크롤러",
     "start_time": "2013",
     "end_time": "2013",
-    "summary": "이 프로젝트는....."
+    "summary": "이 프로젝트는.....",
+    "thumbnail" : "./assets/thumbnail/thumb.jpg"
   },
   {
     "id": 6,
     "title": "기가지니 웹앱",
     "start_time": "2013",
     "end_time": "2013",
-    "summary": "이 프로젝트는....."
+    "summary": "이 프로젝트는.....",
+    "thumbnail" : "./assets/thumbnail/ggenie.jpg"
   }
 ]

@@ -1,87 +1,45 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import projectData from '../ProjectData.json';
 
+function makeArray(projectData) {
+  let rowArray = [];
+  projectData.sort((a, b) => b.id - a.id);
+
+  rowArray = projectData.reduce((rows, key, index) => (index % 3 === 0 ? rows.push([key]) : rows[rows.length - 1].push(key)) && rows, []);
+  return rowArray;
+}
+
 function ProjectCard () {
-  console.log(projectData)
+  let [dataState, setDataState] = useState(makeArray(projectData));
+
   return (
     <Container id="project" className="pt-3">
-      <Row className="mb-5">
-        <Col className="d-flex justify-content-center">
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="./assets/thumb/thumb.jpg" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col className="d-flex justify-content-center">
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="./assets/thumb/thumb.jpg" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col className="d-flex justify-content-center">
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="./assets/thumb/thumb.jpg" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row className="mb-5">
-        <Col className="d-flex justify-content-center">
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="./assets/thumb/thumb.jpg" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col className="d-flex justify-content-center">
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="./assets/thumb/thumb.jpg" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col className="d-flex justify-content-center">
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="./assets/thumb/thumb.jpg" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+      {
+        dataState.map((rData, rIdx) => {
+          return (
+          <Row className="mb-5">
+            {
+              rData.map((data, i) => {
+                return (
+                  <Col className="d-flex justify-content-center" key={ data.id }>
+                    <Card style={{ width: '18rem' }}>
+                      <Card.Img variant="top" src={ data.thumbnail } />
+                      <Card.Body>
+                        <Card.Title>{ data.title }</Card.Title>
+                        <Card.Text>
+                          { data.summary }
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                )
+              })
+            }
+          </Row>
+          )
+        })
+      }
     </Container>
   )
 }
