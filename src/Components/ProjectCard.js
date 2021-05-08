@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import projectData from '../ProjectData.json';
+import { connect } from 'react-redux';
 
 function makeArray(projectData) {
   let rowArray = [];
@@ -10,7 +11,7 @@ function makeArray(projectData) {
   return rowArray;
 }
 
-function ProjectCard () {
+function ProjectCard (props) {
   let [dataState, setDataState] = useState(makeArray(projectData));
 
   return (
@@ -23,12 +24,12 @@ function ProjectCard () {
               rData.map((data, i) => {
                 return (
                   <Col className="d-flex justify-content-center mb-5" key={ data.id }>
-                    <Card style={{ width: '18rem' }}>
+                    <Card style={{ width: '18rem' }} onClick={() => { props.dispatch({type: "show", payload: { id: data.id }}) }}>
                       <Card.Img style={{ height: '10rem' }} variant="top" src={ data.thumbnail } />
                       <Card.Body>
                         <Card.Title>{ data.title }</Card.Title>
                         <Card.Text>
-                          { data.summary }
+                          {/* { data.summary } */}
                         </Card.Text>
                       </Card.Body>
                     </Card>
@@ -44,4 +45,11 @@ function ProjectCard () {
   )
 }
 
-export default ProjectCard;
+function stateToProps(state) {
+  return {
+    showModal: state.reducerModal
+  }
+}
+
+export default connect(stateToProps)(ProjectCard);
+// export default ProjectCard;
