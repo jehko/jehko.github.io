@@ -1,57 +1,33 @@
 [
   {
     "id": 0,
-    "title": "한국도로공사1",
-    "start_time": "2013",
-    "end_time": "2013",
-    "summary": "이 프로젝트는.....",
-    "thumbnail" : "./assets/thumbnail/thumb.jpg"
-  },
-  {
-    "id": 1,
-    "title": "한국도로공사2",
-    "start_time": "2013",
-    "end_time": "2013",
-    "summary": "이 프로젝트는.....",
-    "thumbnail" : "./assets/thumbnail/thumb.jpg"
-  },
-  {
-    "id": 2,
-    "title": "한국도로공사3",
-    "start_time": "2013",
-    "end_time": "2013",
+    "title": "한국도로공사 내부 시스템",
+    "start_time": "2013.07",
+    "end_time": "2016.10",
     "summary": "이 프로젝트는.....",
     "thumbnail" : "./assets/thumbnail/hipass.png"
   },
   {
-    "id": 3,
-    "title": "한국도로공사4",
-    "start_time": "2013",
-    "end_time": "2013",
-    "summary": "이 프로젝트는.....",
-    "thumbnail" : "./assets/thumbnail/thumb.jpg"
-  },
-  {
-    "id": 4,
+    "id": 1,
     "title": "빅데이터 솔루션",
-    "start_time": "2013",
-    "end_time": "2013",
+    "start_time": "2017.09",
+    "end_time": "2018.04",
     "summary": "이 프로젝트는.....",
     "thumbnail" : "./assets/thumbnail/trendup.jfif"
   },
   {
-    "id": 5,
+    "id": 2,
     "title": "SNS 데이터 크롤러",
-    "start_time": "2013",
-    "end_time": "2013",
+    "start_time": "2017.04",
+    "end_time": "2018.04",
     "summary": "이 프로젝트는.....",
     "thumbnail" : "./assets/thumbnail/twitter.png"
   },
   {
-    "id": 6,
+    "id": 3,
     "title": "기가지니 웹앱",
-    "start_time": "2013",
-    "end_time": "2013",
+    "start_time": "2018.06",
+    "end_time": "진행중",
     "summary": "이 프로젝트는.....",
     "thumbnail" : "./assets/thumbnail/ggenie.jpg"
   }

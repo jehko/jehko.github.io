@@ -7,19 +7,25 @@ import ProjectModal from './Components/ProjectModal'
 
 import { Provider } from 'react-redux';
 import { combineReducers, createStore } from 'redux';
+import projectData from './ProjectData.json';
 
 import './App.css';
 
-let showModal = false;
+let modalState = { showModal: false };
 
-function reducerModal(state = showModal, action) {
-  console.log(action)
+function reducerModal(state = modalState, action) {
   if (action.type === "show") {
-    state = true;
+    let found = projectData.find((item) => { return item.id === action.payload.id});
+    state = {showModal: true, ...found}
+    console.log(state);
+    return state;
+  } else if (action.type === "hide"){
+    state = {showModal: false}
+    return state;
   } else {
-    state = false;
+    return state;
   }
-  return state;
+  
 }
 
 let store = createStore(combineReducers({ reducerModal }))

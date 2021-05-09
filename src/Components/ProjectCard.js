@@ -19,7 +19,7 @@ function ProjectCard (props) {
       {
         dataState.map((rData, rIdx) => {
           return (
-          <Row>
+          <Row key={ rIdx }>
             {
               rData.map((data, i) => {
                 return (
