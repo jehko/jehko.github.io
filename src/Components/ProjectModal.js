@@ -10,15 +10,33 @@ function ProjectModal(props) {
       onHide={() => props.dispatch({ type: "hide" })}
       aria-labelledby="example-modal-sizes-title-lg" centered
     >
+      <Modal.Header closeButton>
+        <Modal.Title id="example-modal-sizes-title-lg">{ props.modalState.title }</Modal.Title>
+      </Modal.Header>
       <Row>
-        <Col className="col-sm-4">
-          <Image src={ props.modalState.thumbnail } className="w-100 h-75"></Image>
+        <Col className="col-sm-4 d-flex">
+          <Image src={ props.modalState.thumbnail } className="w-100 h-auto m-3 align-self-center"></Image>
         </Col>
         <Col className="col-sm-8">
-          <Modal.Header closeButton>
-            <Modal.Title id="example-modal-sizes-title-lg">Large Modal</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>...<br/><br/><br/><br/><br/></Modal.Body>
+          <Modal.Body>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div>기간</div>
+              <div>{props.modalState.starttime + ' - ' + props.modalState.endtime}</div></li>
+            <li class="list-group-item">
+              <div>개요</div>
+              <div>{ props.modalState.summary }</div>
+            </li>
+            <li class="list-group-item">
+              <div>개발환경</div>
+              <div></div>
+            </li>
+            <li class="list-group-item">
+              <div>담당업무</div>
+              <div></div>
+            </li>
+          </ul>
+          </Modal.Body>
         </Col>
       </Row>
       

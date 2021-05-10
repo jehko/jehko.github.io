@@ -2,33 +2,41 @@
   {
     "id": 0,
     "title": "한국도로공사 내부 시스템",
-    "start_time": "2013.07",
-    "end_time": "2016.10",
+    "starttime": "2013.07",
+    "endtime": "2016.10",
     "summary": "이 프로젝트는.....",
-    "thumbnail" : "./assets/thumbnail/hipass.png"
+    "thumbnail": "./assets/thumbnail/hipass.png",
+    "environment": "",
+    "role": ""
   },
   {
     "id": 1,
     "title": "빅데이터 솔루션",
-    "start_time": "2017.09",
-    "end_time": "2018.04",
+    "starttime": "2017.09",
+    "endtime": "2018.04",
     "summary": "이 프로젝트는.....",
-    "thumbnail" : "./assets/thumbnail/trendup.jfif"
+    "thumbnail": "./assets/thumbnail/trendup.jfif",
+    "environment": "",
+    "role": ""
   },
   {
     "id": 2,
     "title": "SNS 데이터 크롤러",
-    "start_time": "2017.04",
-    "end_time": "2018.04",
+    "starttime": "2017.04",
+    "endtime": "2018.04",
     "summary": "이 프로젝트는.....",
-    "thumbnail" : "./assets/thumbnail/twitter.png"
+    "thumbnail": "./assets/thumbnail/crawler.png",
+    "environment": "",
+    "role": ""
   },
   {
     "id": 3,
     "title": "기가지니 웹앱",
-    "start_time": "2018.06",
-    "end_time": "진행중",
+    "starttime": "2018.06",
+    "endtime": "진행중",
     "summary": "이 프로젝트는.....",
-    "thumbnail" : "./assets/thumbnail/ggenie.jpg"
+    "thumbnail": "./assets/thumbnail/ggenie.jpg",
+    "environment": "",
+    "role": ""
   }
 ]
