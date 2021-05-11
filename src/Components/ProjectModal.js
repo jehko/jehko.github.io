@@ -24,16 +24,15 @@ function ProjectModal(props) {
               <div>기간</div>
               <div>{props.modalState.starttime + ' - ' + props.modalState.endtime}</div></li>
             <li class="list-group-item">
-              <div>개요</div>
-              <div>{ props.modalState.summary }</div>
-            </li>
-            <li class="list-group-item">
               <div>개발환경</div>
-              <div></div>
+              <div>{ props.modalState.environment }</div>
             </li>
             <li class="list-group-item">
               <div>담당업무</div>
-              <div></div>
+              <div>{ props.modalState.role }</div>
+            </li>
+            <li class="list-group-item">
+              <div>{ props.modalState.summary }</div>
             </li>
           </ul>
           </Modal.Body>

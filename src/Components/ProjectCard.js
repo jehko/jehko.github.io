@@ -24,7 +24,7 @@ function ProjectCard (props) {
               rData.map((data, i) => {
                 return (
                   <Col className="d-flex justify-content-center mb-5" key={ data.id }>
-                    <Card style={{ width: '18rem' }} onClick={() => { props.dispatch({type: "show", payload: { id: data.id }}) }}>
+                    <Card style={{ width:'18rem', cursor:'pointer' }} onClick={() => { props.dispatch({type: "show", payload: { id: data.id }}) }}>
                       <Card.Img style={{ height: '10rem' }} variant="top" src={ data.thumbnail } />
                       <Card.Body>
                         <Card.Title>{ data.title }</Card.Title>
