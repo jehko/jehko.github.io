@@ -1,5 +1,5 @@
+import React from "react";
 import { Modal, Button, Row, Col, Image } from "react-bootstrap";
-import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 
 function ProjectModal(props) {
@@ -19,22 +19,32 @@ function ProjectModal(props) {
         </Col>
         <Col className="col-sm-8">
           <Modal.Body>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <div>기간</div>
-              <div>{props.modalState.starttime + ' - ' + props.modalState.endtime}</div></li>
-            <li class="list-group-item">
-              <div>개발환경</div>
-              <div>{ props.modalState.environment }</div>
-            </li>
-            <li class="list-group-item">
-              <div>담당업무</div>
-              <div>{ props.modalState.role }</div>
-            </li>
-            <li class="list-group-item">
-              <div>{ props.modalState.summary }</div>
-            </li>
-          </ul>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div>기간</div>
+                <div>{props.modalState.starttime + ' - ' + props.modalState.endtime}</div></li>
+              <li class="list-group-item">
+                <div>개발환경</div>
+                <div>{ props.modalState.environment }</div>
+              </li>
+              <li class="list-group-item">
+                <div>담당업무</div>
+                <div>{ props.modalState.role }</div>
+              </li>
+              <li class="list-group-item">
+                <div>{ props.modalState.summary }</div>
+              </li>
+              {
+                props.modalState.link ? (
+                  <li class="list-group-item">
+                    <div>관련 링크</div>
+                    <div><a href={props.modalState.link} target="_blank" rel="noreferrer">{ props.modalState.link }</a></div>
+                  </li>
+                ) : (
+                  null
+                )
+              }
+            </ul>
           </Modal.Body>
         </Col>
       </Row>

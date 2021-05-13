@@ -14,49 +14,50 @@
     "title": "하이패스 단말기 등록 시스템",
     "starttime": "2014.09",
     "endtime": "2015.07",
-    "summary": "이 프로젝트는.....",
+    "summary": "단말기 등록 시스템 구축은 하이패스 단말기 등록 웹 시스템을 개선 구축하는 프로젝트였습니다. 다섯개의 단위 시스템 중 관리자용 관리시스템을 개발했습니다. 관리시스템은 80여개의 화면으로 이루어져 있고 이중 대부분의 메뉴를 개발했습니다. 기존에 EJB로 구축된 시스템을 전자정부표준프레임워크에 맞춰 고도화하여 개발했고 기존 DB의 데이터를 신규 DB로 이관하는 작업도 진행했습니다. 일반 고객을 대상으로 한 하이패스 자가 등록 시스템의 웹접근성 인증을 진행했고, jmeter로 페이지 부하테스트를 경험했습니다.",
     "thumbnail": "./assets/thumbnail/hipass.png",
-    "environment": "",
-    "role": "웹개발"
+    "environment": "전자정부표준프레임워크, Java, JSP, Javascript, Oracle, jmeter",
+    "role": "화면 개발(80본), 웹접근성, 부하테스트",
+    "link": "https://www.e-hipassplus.co.kr"
   },
   {
     "id": 2,
-    "title": "한국도로공사 내부 시스템",
+    "title": "수원-광명 고속도로 영업시스템",
     "starttime": "2015.08",
     "endtime": "2016.10",
-    "summary": "이 프로젝트는.....",
+    "summary": "수원-광명 간 고속도로 영업 시스템의 요금 징수 및 관리 프로그램을 개발했습니다. 이 시스템은 각 IC에서 사용하는 영업소 시스템, 관리 시스템, 두 시스템의 인터페이스를 담당하는 연계 시스템으로 구성되어 있습니다. 이 중 관리 시스템의 웹 개발을 담당했습니다. 고속도로 통행량 통계, 영업정보와 관련된 화면 40본을 개발했습니다. 다른 고속도로 영업 시스템을 포팅하는 작업이 주 작업이었고, 테스트를 위한 더미 데이터를 만들어 테스트를 진행하는 것이 까다로웠지만 좋은 경험이 되었습니다.",
     "thumbnail": "./assets/thumbnail/tollgate.jpg",
-    "environment": "",
-    "role": "웹개발"
+    "environment": "EJB, Java, JSP, Javascript, Oracle",
+    "role": "화면 개발(40본), 테스트 데이터 생성"
   },
   {
     "id": 3,
     "title": "SNS 데이터 크롤러",
     "starttime": "2017.04",
     "endtime": "2018.04",
-    "summary": "이 프로젝트는.....",
+    "summary": "빅데이터 분석의 기초가 되는 데이터 수집과 전처리를 하는 크롤러의 개발과 운영을 담당했습니다. 트위터, 인스타그램, 페이스북 등 SNS를 비롯하여 네이버, 다음 블로그 및 카페의 게시글을 수집했습니다. 그루비로 개발된 이 크롤러는 Jsoup과 PhantomJS를 사용하여 각 웹페이지에 맞게 게시글을 파싱하고 수집했습니다. Oracle에 데이터를 적재했고 Redis를 이용하여 최근 수집 데이터에 대한 중복 수집을 방지했습니다.",
     "thumbnail": "./assets/thumbnail/crawler.png",
-    "environment": "",
-    "role": ""
+    "environment": "Srping3.0, Java, Groovy, Oracle, Redis",
+    "role": "SNS 게시글, 댓글 수집기 개발 및 운영"
   },
   {
     "id": 4,
-    "title": "빅데이터 분석 웹솔루션",
+    "title": "빅데이터 분석 웹솔루션 TrendUp v4",
     "starttime": "2017.09",
     "endtime": "2018.04",
-    "summary": "이 프로젝트는.....",
+    "summary": "빅데이터 분석 웹 시스템인 TrendUp v4를 개발했습니다. Spring3.0 기반 MVC패턴으로 화면은 JSP, jQuery를 이용했고, gridstack 라이브러리를 사용했습니다. 또 데이터 시각화를 위하여 zingchart를 사용했습니다. 개인적으로는 처음으로 자바스크립트를 공부하며 프론트엔드를 개발한 프로젝트입니다. 이후 프론트엔드 개발에 흥미가 생겨 회사를 나오고 바닐라JS를 활용한 프로젝트를 찾기 시작했습니다.",
     "thumbnail": "./assets/thumbnail/trendup.jfif",
-    "environment": "",
-    "role": ""
+    "environment": "Spring3.0, Java, Javascript, Oracle",
+    "role": "빅데이터 검색식 관리 화면 개발, zingchart를 이용한 데이터 시각화"
   },
   {
     "id": 5,
     "title": "기가지니 웹앱",
     "starttime": "2018.06",
     "endtime": "진행중",
-    "summary": "이 프로젝트는.....",
+    "summary": "기가지니 웹앱은 KT의 AI스피커인 기가지니에서 이용할 수 있는 앱 형태의 웹 프로그램입니다. 동화를 듣거나 영상을 보는 어린이 교육용 앱을 주로 개발했습니다. 바닐라JS를 활용한 프로젝트를 경험하고 싶어 프리랜서로 수행한 프로젝트로 원래의 목표였던 자바스크립트 기초를 활용하고, 공부하는 데 많은 도움이 되었습니다. 현재는 ES6와 SPA에 관심이 생겨 React를 공부하고 있습니다.",
     "thumbnail": "./assets/thumbnail/ggenie.jpg",
-    "environment": "",
-    "role": ""
+    "environment": "Spring Boot, Java, Html, Javascript, Postgresql",
+    "role": "기가지니 웹앱개발(웹)"
   }
 ]

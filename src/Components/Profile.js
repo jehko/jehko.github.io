@@ -72,12 +72,12 @@ function Profile () {
               </blockquote>
             </div>
             <div className="profile-item">
-              <h2>CAREER</h2>
+              <h2>CAREER <span className="h5">(7년3개월)</span></h2>
               <blockquote>
-                <p>2018 - 현재 기가지니 웹앱 서비스 개발</p>
-                <p>2017-2018 빅데이터 솔루션 개발</p>
-                <p>2017-2018 SNS 웹크롤러 개발</p>
-                <p>2013-2016 한국도로공사 내부 시스템 다수 개발</p>
+                <p><span>2020.12 - 현재</span><span className="p-5">ktds</span></p>
+                <p><span>2018.06 - 2020.12</span><span className="p-4">리네아정보기술(프리랜서)</span></p>
+                <p><span>2017.04 - 2018.04</span><span className="p-4">타파크로스</span></p>
+                <p><span>2013.07 - 2016.10</span><span className="p-4">휴먼아이티에스</span></p>
               </blockquote>
             </div>
           </Col>
