@@ -4,6 +4,7 @@ import Summary from './Components/Summary'
 import Profile from './Components/Profile'
 import ProjectCard from './Components/ProjectCard'
 import ProjectModal from './Components/ProjectModal'
+import Contact from './Components/Contact'
 
 import { Provider } from 'react-redux';
 import { combineReducers, createStore } from 'redux';
@@ -39,6 +40,7 @@ function App() {
         <Profile></Profile>
         <ProjectCard></ProjectCard>
         <ProjectModal></ProjectModal>
+        <Contact></Contact>
       </div>
     </Provider>
   );
