@@ -44,7 +44,6 @@ function Profile () {
             <div className="profile-item">
               <h2>CONTACT</h2>
               <blockquote>
-                <p>Tel. 010-2944-1219</p>
                 <p>Email jehko08@naver.com</p>
                 <p>Addr. 서울시 구로구 구일로</p>
               </blockquote>
