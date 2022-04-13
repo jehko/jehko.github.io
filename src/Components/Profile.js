@@ -9,11 +9,11 @@ function Profile () {
             <div className="profile-item">
               <h2>PROFILE</h2>
               <blockquote>
-                안녕하세요. 개발자 고정훈입니다.<br/>
-                학부때 프로젝트를 진행하며 개발에 대한 매력을 느꼈습니다.<br/>
-                2013년 첫 회사에 입사하여 실무를 시작했고, 끊임없이 '재미있는 것'을
-                찾고있습니다.<br/>
-                최근에는 React, JPA에 관심이 생겨 공부하고 있습니다.                
+                8년차 웹개발자 고정훈입니다.<br/>
+                Java, Spring Boot, Oracle, PostgreSql, VueJs를 활용하여 프로젝트 구축과 운영을 경험했습니다.<br/>
+                형상 관리는 주로 Git을 사용하고 있으며 슬랙을 활용한 협업을 경험했습니다.<br/>
+                끊임없이 '새로운 것, 재미있는 것'을 찾고있으며<br/>
+                최근에는 AWS에 React, JPA 토이 프로젝트를 구축하며 재미를 느끼고 있습니다.                
               </blockquote>
             </div>
             <div className="profile-item">
@@ -22,21 +22,20 @@ function Profile () {
                 <span className="word-token">JAVA</span>
                 <span className="word-token">SPRING</span>
                 <span className="word-token">Javascript</span>
+                <span className="word-token">VueJs</span>
                 <span className="word-token">React</span>
-                <span className="word-token">Oracle</span>
                 <span className="word-token">Postgresql</span>
               </blockquote>
             </div>
             <div className="profile-item">
               <h2>TOOLS</h2>
               <blockquote>
-                <span className="word-token">Eclipse</span>
+                <span className="word-token">IntelliJ</span>
                 <span className="word-token">VS Code</span>
-                <span className="word-token">Toad</span>
-                <span className="word-token">pgAdmin</span>
+                <span className="word-token">DataGrip</span>
                 <span className="word-token">SLACK</span>
                 <span className="word-token">GIT</span>
-                <span className="word-token">SVN</span>
+                <span className="word-token">Jenkins</span>
               </blockquote>
             </div>
           </Col>
@@ -52,7 +51,7 @@ function Profile () {
               <h2>EDUCATION</h2>
               <blockquote>
                 <p>2008 서울대진고등학교 졸업</p>
-                <p>2012 한성대학교 졸업</p>
+                <p>2012 한성대학교 컴퓨터공학과 졸업</p>
               </blockquote>
             </div>
             <div className="profile-item">
@@ -71,7 +70,7 @@ function Profile () {
               </blockquote>
             </div>
             <div className="profile-item">
-              <h2>CAREER <span className="h5">(7년3개월)</span></h2>
+              <h2>CAREER <span className="h5">(8년)</span></h2>
               <blockquote>
                 <p><span>2020.12 - 현재</span><span className="p-5">ktds</span></p>
                 <p><span>2018.06 - 2020.12</span><span className="p-4">리네아정보기술(프리랜서)</span></p>
